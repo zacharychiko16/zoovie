@@ -12,22 +12,16 @@
       <a href="index.html">
         <h1 class="logo">Z<span class="logocolor">ovie</span></h1>
       </a>
-      <form id="form">
+      <form id="form" onsubmit="searchMovie(event)">
         <input type="text" id="search" class="search" placeholder="Search..." />
       </form>
       <div class="sort-buttons">
-        <div>
-          <label>
-            <input type="radio" name="sort-type" value="date" id="sort-by-date" />
-            Sort by Release Date
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="radio" name="sort-type" value="rating" id="sort-by-rating" />
-            Sort by Rating
-          </label>
-        </div>
+        <select name="" id="filter">
+          <option value="Default" disabled selected>Sort</option>
+          <option value="By Release Date ">Sort by Release Date</option>
+          <option value="By Rating">Rating</option>
+        </select>
+       
       </div>
       
     </header>
